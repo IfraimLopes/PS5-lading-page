@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playstation Store</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!--Link dos Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <img class="img-logo" src="img/logo.png" alt="logo" />
+        <nav>
+          <ul id="menu-list">
+            <li class="nav-li">
+              <a href="#">Console</a>
+            </li>
+            <li class="nav-li">
+              <a href="#">Acessórios</a>
+            </li>
+            <li class="nav-li">
+              <a href="#">Controles</a>
+            </li>
+            <li class="nav-li">
+              <a href="#">Outros</a>
+            </li>
+          </ul>
+        </nav>
+        <img
+          class="menu-icon"
+          onclick="showmenu()"
+          src="img/menu.png"
+          alt="menu"
+        />
+      </div>
+
+      <div class="row">
+        <div class="column-1">
+          <h2>
+            PS5 <br />
+            DualShock
+          </h2>
+          <h3>Wireless Controller for PlayStation</h3>
+          <p>Controlo Original</p>
+          <h4>50.000,00KZ</h4>
+
+          <button>Comprar Agora <img src="img/arrow.png" alt="arrow" /></button>
+        </div>
+
+        <div class="column-2">
+          <img src="img/controller.png" alt="controle-ps5" />
+          <div class="box-color"></div>
+          <button>
+            <img src="img/add.png" alt="add" />
+          </button>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+      </div>
+    </div>
+  </body>
+  <script>
+    const menuList = document.getElementById("menu-list");
+    menuList.style.maxHeight = "0px";
+
+    function showmenu() {
+      if (menuList.style.maxHeight == "0px") {
+        menuList.style.maxHeight = "120px";
+      } else {
+        menuList.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</html>
